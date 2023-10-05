@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY arithmetic_circuit is
+	port (
+		c_in  : in std_logic;
+		A     : in std_logic_vector(15 downto 0);
+		B     : in std_logic_vector(15 downto 0);
+		S     : in std_logic_vector(1 downto 0);
+		G     : in std_logic_vector(15 downto 0);
+		C_out : std_logic;
+end arithmetic_circuit
+
+architecture function_table of arithmetic_circuit is
+	signal
